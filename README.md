@@ -34,10 +34,23 @@ To create a GitHub Personal Access Token (PAT):
 7. Copy the token immediately (you won't be able to see it again)
 8. Add it to your `.env.local` file as `GITHUB_TOKEN`
 
+## Contributing
+
+We welcome contributions to improve this project! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes with clear, concise commits.
+4. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
+5. Run tests to ensure your changes do not break existing functionality.
+6. Submit a pull request detailing your changes and why they should be merged.
+
+Please adhere to the existing code style and ensure your code follows best practices.
+
 ## Usage
 
 ```bash
-curl -X POST https://your-deployment.vercel.app/api/agent \
+curl -X POST https://vercel-ship-25-coding-agent-alpha.vercel.app/api/agent \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "update readme to say hey were so back",

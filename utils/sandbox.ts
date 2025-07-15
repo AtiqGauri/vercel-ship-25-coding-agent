@@ -22,7 +22,7 @@ export const readFile = async (sandbox: Sandbox, path: string) => {
   console.log(`Reading file: ${path}`);
   const result = await sandbox.runCommand("cat", [path]);
   const data = await result.output();
-  console.log(`File read successfully: ${path} ${data}`);
+  console.log(`File read successfully: ${path}`);
   return { path, content: data.toString() };
 };
 
@@ -66,7 +66,7 @@ export const editFile = async (
   // Get and print the updated file content
   const updatedResult = await sandbox.runCommand("cat", [path]);
   const updatedFileContent = await updatedResult.output();
-  console.log(`Updated file content for ${path}:\n${updatedFileContent}`);
+  console.log(`Updated file content for ${path}`);
   return { success: true };
 };
 
